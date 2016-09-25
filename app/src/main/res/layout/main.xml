@@ -5,31 +5,16 @@
   android:layout_width="fill_parent"
   android:layout_height="fill_parent">
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal">
-
-  <Button
-      android:id="@+id/addButton"
+  <FrameLayout
       android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:text="@string/add_button"
-      />
+      android:layout_height="wrap_content"
+      android:id="@+id/fragment_container_add">
+  </FrameLayout>
 
-
-  <EditText
-    android:id="@+id/myEditText"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/add_item_hint"
-  />
-  </LinearLayout>
-
-  <ListView
-    android:id="@+id/myListView"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-  />
+  <FrameLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/fragment_container_list">
+  </FrameLayout>
 
 </LinearLayout>
