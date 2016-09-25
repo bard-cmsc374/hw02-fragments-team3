@@ -15,10 +15,27 @@ import android.widget.TextView;
  * Created by meghanhogan on 9/22/16.
  */
 public class AddItemFragment extends Fragment {
-
+    ItemCapture mItemCapture;
     private TextView mEditText;
     private Button mItemButton;
 
+    public interface ItemCapture {
+        public void setItem(String s);
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+        // This makes sure that the container activity has implemented
+        // the callback interface. If not, it throws an exception
+        try {
+            mItemCapture = (ItemCapture) activity;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement OnHeadlineSelectedListener");
+        }
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState){
@@ -35,6 +52,8 @@ public class AddItemFragment extends Fragment {
 
         mItemButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+                String item = mEditText.getText().toString();
+                mItemCapture.setItem(item);
                 mEditText.setText("");
             }
         });

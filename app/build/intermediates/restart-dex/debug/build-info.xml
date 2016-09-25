@@ -4,21 +4,22 @@
     api-level="23"
     density="420dpi"
     format="7"
-    timestamp="340671016722872"
-    token="-933143552562400575" >
+    timestamp="342692199787379"
+    token="-933143552562400575"
+    verifier="CLASS_ADDED" >
 
     <task
         name="javac"
-        duration="615" />
+        duration="622" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="113" />
+        duration="100" />
     <task
         name="verifier"
-        duration="30" />
+        duration="9" />
 
     <artifact
         location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
@@ -29,7 +30,9 @@
             location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="340671016722872" >
+    <build
+        timestamp="342692199787379"
+        verifier="CLASS_ADDED" >
         <artifact
             location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
             type="DEX" />

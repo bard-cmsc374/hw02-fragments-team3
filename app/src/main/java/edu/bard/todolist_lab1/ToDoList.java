@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
-public class ToDoList extends FragmentActivity {
+public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCapture{
 
     public static String TAG = "todolab";
     private EditText mEditText; // enter todo item
@@ -43,32 +43,15 @@ public class ToDoList extends FragmentActivity {
                     .commit();
         }
 
-//        // Get references to UI widgets
-//        mEditText = (EditText) findViewById(R.id.myEditText);
-//        mItemButton = (Button) findViewById(R.id.addButton);
-//        mListView = (ListView) findViewById(R.id.myListView);
-//
-//        // Create the ArrayList and the ArrayAdapter
-//        mToDoItems = new ArrayList<String>();
-//        aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mToDoItems);
-//
-//        // Bind the listview to the array adapter
-//        mListView.setAdapter(aa);
-//
-//        // Add key listener to add the new todo item
-//        // when the middle D-pad button is pressed.
-//        mItemButton.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View view) {
-//                mToDoItems.add(0, mEditText.getText().toString());
-//                aa.notifyDataSetChanged();
-//                mEditText.setText("");
-//            }
-//        });
 
         Log.i(TAG, "Entered onCreate");
     }
 
 
+        public void setItem (String item) {
+            mItem = item;
+            Log.i(TAG, "item is " + mItem);
+        }
 
 
     protected void onStart() {
