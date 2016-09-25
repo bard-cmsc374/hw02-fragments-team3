@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/home/sven/AndroidStudioProjects/ToDoList_lab1/app/build/intermediates/res/merged/debug/layout/main.xml",
-        "source": "/home/sven/AndroidStudioProjects/ToDoList_lab1/app/src/main/res/layout/main.xml"
+        "merged": "/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/merged/debug/layout/fragment_list.xml",
+        "source": "/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/src/main/res/layout/fragment_list.xml"
+    },
+    {
+        "merged": "/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/src/main/res/layout/main.xml"
     }
 ]

@@ -2,10 +2,13 @@ package edu.bard.todolist_lab1;
 /*
   Most basic Todo List in one activity, no fragments.
  */
-import java.util.ArrayList;
+import  java.util.ArrayList;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -13,7 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
-public class ToDoList extends Activity {
+public class ToDoList extends FragmentActivity {
     public static String TAG = "todolab";
     private EditText mEditText; // enter todo item
     private Button mItemButton; // add the item to the list
@@ -28,17 +31,28 @@ public class ToDoList extends Activity {
         // Inflate your view
         setContentView(R.layout.main); // Extracts resources, autogenerates R.java from XML file
 
+        //Fragment manager will wire fragments to main view
+        FragmentManager fm = getSupportFragmentManager();
+        Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+
+        if (fragment == null) {  //commits a fragment transaction to main screen
+            fragment = new ListFragment();
+            fm.beginTransaction()
+                    .add(R.id.fragment_container, fragment)
+                    .commit();
+        }
+
         // Get references to UI widgets
         mEditText = (EditText) findViewById(R.id.myEditText);
         mItemButton = (Button) findViewById(R.id.addButton);
-        mListView = (ListView) findViewById(R.id.myListView);
+        //mListView = (ListView) findViewById(R.id.myListView);
 
         // Create the ArrayList and the ArrayAdapter
         mToDoItems = new ArrayList<String>();
         aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mToDoItems);
 
         // Bind the listview to the array adapter
-        mListView.setAdapter(aa);
+        //mListView.setAdapter(aa);
 
         // Add key listener to add the new todo item
         // when the middle D-pad button is pressed.
