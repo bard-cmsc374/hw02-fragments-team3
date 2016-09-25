@@ -43,6 +43,15 @@ public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCa
                     .commit();
         }
 
+        Fragment fragment2 = fm.findFragmentById(R.id.fragment_container_list);
+
+        if (fragment2 == null){
+            fragment2 = new ListFragment();
+            fm.beginTransaction()
+                    .add(R.id.fragment_container_list, fragment2)
+                    .commit();
+        }
+
 
         Log.i(TAG, "Entered onCreate");
     }
@@ -50,7 +59,8 @@ public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCa
 
         public void setItem (String item) {
             mItem = item;
-            //addNewItem(mItem);
+            ListFragment listFrag = (ListFragment)getSupportFragmentManager().findFragmentById(R.id.fragment_container_list);
+            listFrag.addNewItem(mItem);
             Log.i(TAG, "item is " + mItem);
         }
 

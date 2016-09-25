@@ -4,22 +4,21 @@
     api-level="23"
     density="420dpi"
     format="7"
-    timestamp="342692199787379"
-    token="-933143552562400575"
-    verifier="CLASS_ADDED" >
+    timestamp="346288054069867"
+    token="-933143552562400575" >
 
     <task
         name="javac"
-        duration="622" />
+        duration="693" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="100" />
+        duration="91" />
     <task
         name="verifier"
-        duration="9" />
+        duration="4" />
 
     <artifact
         location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
@@ -30,9 +29,85 @@
             location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
+    <build timestamp="345705790891276" >
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_bf7a0deb57c1a7752fe04f9faade71e35867a7f7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.0_68d59d4cffe8447ad291b4afb5b5a469ad9fe84b/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_4246bf355ebe7e8b4496968f7f6b4c9fd699b685/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_f59436395a10cf650433301b35776b9fa013fa14/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_9f9affe64ad6eb9d8ccae7c4f8e6abe112f3af38/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_90f034b9f0f1850ee000a2a0cc1c9393ead69ff9/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_7a92a944d51f5e443ee2ef1a4d9c5cd117e00fef/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_b2cd7d0a63acd700defc3267d2ec9e24d5f75d74/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_cd1acfacc33a44a7b7ab04fef23f3c3432d74a7d/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_ec79e29c0bab9fa699d25365ec5d50aaa8699cf1/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_3e08ceb16523c1d719172e530bb952a8757b96e2/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_90d71ce88cf90473271cb3174b1b5c5d3030e8cd/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_1861b19d4fb8a24d4cf05b6de56fcd7f6ebc756b/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c1674ecfa48be5b469d90097065c545736a3d51b/classes.dex"
+            type="DEX" />
+    </build>
     <build
-        timestamp="342692199787379"
-        verifier="CLASS_ADDED" >
+        timestamp="345940536586984"
+        verifier="FIELD_ADDED" >
+        <artifact
+            location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build timestamp="346288054069867" >
         <artifact
             location="/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
             type="DEX" />

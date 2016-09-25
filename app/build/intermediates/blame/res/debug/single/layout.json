@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/merged/debug/layout/fragment_list.xml",
+        "source": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/src/main/res/layout/fragment_list.xml"
+    },
+    {
         "merged": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/merged/debug/layout/fragment_add_item.xml",
         "source": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/src/main/res/layout/fragment_add_item.xml"
     },
