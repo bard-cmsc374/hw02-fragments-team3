@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86_64"
+    abi="x86_64,x86"
     api-level="23"
     density="420dpi"
     format="7"
-    timestamp="18054426907755"
-    token="5126495740284054035" >
+    timestamp="21418232539258"
+    token="5126495740284054035"
+    verifier="FIELD_REMOVED" >
 
     <task
         name="javac"
-        duration="32884" />
+        duration="852" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="974" />
+        duration="169" />
     <task
         name="verifier"
-        duration="42" />
+        duration="97" />
 
     <artifact
-        location="/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+        type="DEX" />
 
-    <build timestamp="18054426907755" >
+    <build timestamp="19308644559512" >
         <artifact
             location="/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="21418232539258"
+        verifier="FIELD_REMOVED" >
+        <artifact
+            location="/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/MarleyAlford/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>
