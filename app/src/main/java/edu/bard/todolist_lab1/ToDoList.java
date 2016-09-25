@@ -34,12 +34,12 @@ public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCa
         setContentView(R.layout.main); // Extracts resources, autogenerates R.java from XML file
 
         FragmentManager fm = getSupportFragmentManager();
-        Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+        Fragment fragment = fm.findFragmentById(R.id.fragment_container_add);
 
         if (fragment == null){
             fragment = new AddItemFragment();
             fm.beginTransaction()
-                    .add(R.id.fragment_container, fragment)
+                    .add(R.id.fragment_container_add, fragment)
                     .commit();
         }
 
@@ -50,6 +50,7 @@ public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCa
 
         public void setItem (String item) {
             mItem = item;
+            //addNewItem(mItem);
             Log.i(TAG, "item is " + mItem);
         }
 

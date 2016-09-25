@@ -15,10 +15,11 @@ import android.widget.TextView;
  * Created by meghanhogan on 9/22/16.
  */
 public class AddItemFragment extends Fragment {
-    ItemCapture mItemCapture;
+    ItemCapture mItemCapture; //interface object
     private TextView mEditText;
     private Button mItemButton;
 
+    //declaration of interface that is
     public interface ItemCapture {
         public void setItem(String s);
     }
@@ -33,7 +34,7 @@ public class AddItemFragment extends Fragment {
             mItemCapture = (ItemCapture) activity;
         } catch (ClassCastException e) {
             throw new ClassCastException(activity.toString()
-                    + " must implement OnHeadlineSelectedListener");
+                    + " must implement ItemCapture");
         }
     }
 
