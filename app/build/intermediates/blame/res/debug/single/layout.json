@@ -1,6 +1,14 @@
 [
     {
-        "merged": "/home/sven/AndroidStudioProjects/ToDoList_lab1/app/build/intermediates/res/merged/debug/layout/main.xml",
-        "source": "/home/sven/AndroidStudioProjects/ToDoList_lab1/app/src/main/res/layout/main.xml"
+        "merged": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/merged/debug/layout/fragment_add_item.xml",
+        "source": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/src/main/res/layout/fragment_add_item.xml"
+    },
+    {
+        "merged": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/build/intermediates/res/merged/debug/layout/activity_fragment.xml",
+        "source": "/Users/meghanhogan/AndroidStudioProjects/hw02-fragments-team3/app/src/main/res/layout/activity_fragment.xml"
     }
 ]
