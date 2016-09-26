@@ -36,6 +36,7 @@ public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCa
         FragmentManager fm = getSupportFragmentManager();
         Fragment fragment = fm.findFragmentById(R.id.fragment_container_add);
 
+        //fill first fragment container with addItemFragment
         if (fragment == null){
             fragment = new AddItemFragment();
             fm.beginTransaction()
@@ -44,7 +45,7 @@ public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCa
         }
 
         Fragment fragment2 = fm.findFragmentById(R.id.fragment_container_list);
-
+        //fill second fragment container with ListFragment
         if (fragment2 == null){
             fragment2 = new ListFragment();
             fm.beginTransaction()
@@ -53,15 +54,17 @@ public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCa
         }
 
 
-        Log.i(TAG, "Entered onCreate");
+        //Log.i(TAG, "Entered onCreate");
     }
 
 
         public void setItem (String item) {
+            //implementation of interface. Gets item and sets value of mItem
+            //calls ListFragment's addNewItem method
             mItem = item;
             ListFragment listFrag = (ListFragment)getSupportFragmentManager().findFragmentById(R.id.fragment_container_list);
             listFrag.addNewItem(mItem);
-            Log.i(TAG, "item is " + mItem);
+            //Log.i(TAG, "item is " + mItem);
         }
 
 
