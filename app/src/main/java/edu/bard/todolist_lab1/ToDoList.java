@@ -19,18 +19,18 @@ import android.widget.ListView;
 public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCapture{
 
     public static String TAG = "todolab";
-    private EditText mEditText; // enter todo item
-    private Button mItemButton; // add the item to the list
-    private ArrayList<String> mToDoItems; // list of items
-    private ArrayAdapter<String> aa; // adapter from list to viewlist
-    private ListView mListView;
+//     private EditText mEditText; // enter todo item
+//     private Button mItemButton; // add the item to the list
+//     private ArrayList<String> mToDoItems; // list of items
+//     private ArrayAdapter<String> aa; // adapter from list to viewlist
+//     private ListView mListView;
     private String mItem;
 
     @Override
     public void onCreate(Bundle stuff) {
         super.onCreate(stuff);
 
-        // Inflate your view
+        // Inflate view
         setContentView(R.layout.main); // Extracts resources, autogenerates R.java from XML file
 
         FragmentManager fm = getSupportFragmentManager();
@@ -54,7 +54,7 @@ public class ToDoList extends FragmentActivity implements AddItemFragment.ItemCa
         }
 
 
-        //Log.i(TAG, "Entered onCreate");
+        Log.i(TAG, "Entered onCreate");
     }
 
 
