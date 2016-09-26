@@ -19,7 +19,7 @@ public class AddItemFragment extends Fragment {
     private TextView mEditText;
     private Button mItemButton;
 
-    //declaration of interface that is
+    //declaration of interface implemented by ToDoList
     public interface ItemCapture {
         public void setItem(String s);
     }
@@ -48,9 +48,12 @@ public class AddItemFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View v = inflater.inflate(R.layout.fragment_add_item, container, false);
 
+       //locate view objects
         mEditText =  (EditText)v.findViewById(R.id.myEditText);
         mItemButton = (Button)v.findViewById(R.id.addButton);
 
+
+        //set onClick listener for add button and use interface method to save item in ToDolist
         mItemButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 String item = mEditText.getText().toString();
